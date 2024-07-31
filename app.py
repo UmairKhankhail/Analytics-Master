@@ -6,10 +6,10 @@ from flask_cors import CORS
 app = Flask(__name__)
 # CORS(app)
 
-# app.register_blueprint(upload_bp, url_prefix='/upload')
-# app.register_blueprint(query_bp, url_prefix='/query')
+app.register_blueprint(upload_bp, url_prefix='/upload')
+app.register_blueprint(query_bp, url_prefix='/query')
 # # Set strict_slashes to False for all routes
-# app.url_map.strict_slashes = False
+app.url_map.strict_slashes = False
 
 @app.route('/')
 def index():

@@ -15,6 +15,6 @@ app.url_map.strict_slashes = False
 def index():
     return "The application is deployed and it is running."
 
-if __name__ == '__main__':
+#if __name__ == '__main__':
     #app.run(host='0.0.0.0', port=5000, debug=False)
     app.run()
